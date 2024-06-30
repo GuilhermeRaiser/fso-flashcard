@@ -8,6 +8,7 @@ class ProjflashcardApplicationTests {
 
 	@Test
 	void contextLoads() {
-	}
 
+	}
+	
 }

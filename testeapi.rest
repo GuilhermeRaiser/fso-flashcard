@@ -1,1 +1,59 @@
 GET http://localhost:8080/api/v1/clientes
+
+### Chamada POST para Clientes
+POST http://localhost:8080/api/v1/clientes
+Content-Type: application/json
+
+{
+    "nome": "Gui Raiser",
+    "endereco": "Rua Juazeira do Norte",
+    "dataNascimento": "2024-04-22"
+}
+
+### Alteração PUT para Clientes
+PUT http://localhost:8080/api/v1/clientes/2
+Content-Type: application/json
+
+{
+    "nome": "Gui",
+    "endereco": "Rua Juazeiro do Norte"
+    
+}
+
+#### Chamada DELETE para Clientes
+DELETE http://localhost:8080/api/v1/clientes/1
+
+
+####
+GET http://localhost:8080/api/v1/deck
+
+
+
+### Chamada POST para o deck
+POST http://localhost:8080/api/v1/deck
+Content-Type: application/json
+
+{
+    "deckNome": "Espanhol"
+}
+
+### Chamada PUT para alteração do Deck
+PUT http://localhost:8080/api/v1/deck/1
+Content-Type: application/json
+
+{
+    "deckNome": "Espanhol C1"
+}
+###
+POST http://localhost:8080/api/v1/card
+Content-Type: application/json
+
+{
+    "addnomeDeck": "Espanhol A1",
+    "titulo": "Hola",
+    "textoFrente": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum tempor lorem sit amet hendrerit.",
+    "textoVerso": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}
+
+###
+GET http://localhost:8080/api/v1/card

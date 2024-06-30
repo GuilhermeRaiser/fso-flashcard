@@ -10,4 +10,5 @@ public class ProjflashcardApplication {
 		SpringApplication.run(ProjflashcardApplication.class, args);
 	}
 
+	
 }
