@@ -7,6 +7,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
+import br.univille.projflashcard.entity.Card;
 import br.univille.projflashcard.entity.Cliente;
 import br.univille.projflashcard.entity.Deck;
 
@@ -20,6 +21,8 @@ public class Startup {
     private ClienteService service;
     @Autowired
     private DeckService deckService;
+    private CardService cardService;
+    
     @EventListener
     public void onApplicationEvent(ContextRefreshedEvent event){
         var cliente1 = new Cliente();
@@ -32,4 +35,11 @@ public class Startup {
         deck1.setDeckNome("Espanhol");
         deckService.save(deck1);
     }
-}
+    public void onApplicationEvent3(ContextRefreshedEvent event){
+        var card = new Card();
+            card.setAddnomeDeck("Espanhol");
+            card.setTitulo("Buenas noches");
+            card.setTextoFrente("Buenas noches, como vá?");
+            cardService.save(card);
+    }
+ }

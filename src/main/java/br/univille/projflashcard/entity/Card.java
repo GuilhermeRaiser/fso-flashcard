@@ -55,6 +55,10 @@ public class Card {
     public void setTextoVerso(String textoVerso) {
         this.textoVerso = textoVerso;
     }
+    public void setDeckNome(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDeckNome'");
+    }
 
     
 }
